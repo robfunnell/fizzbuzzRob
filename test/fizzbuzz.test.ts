@@ -1,5 +1,8 @@
 import {expect} from "chai";
 import {fizzbuzz} from "../src/fizzbuzz";
+import {fizzbuzzRange} from "../src/fizzbuzz";
+
+
 
 describe('fizzbuzz', () => {
   it('should return the number', () => {
@@ -24,4 +27,11 @@ describe('fizzbuzz', () => {
   });
 
 
+
+});
+
+describe('Fizzbuzz range function', () => {
+  it('should return the array', () => {
+    expect(fizzbuzzRange(2)).to.eql([1, 2]);
+  });
 });
